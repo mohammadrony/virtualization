@@ -1,14 +1,25 @@
-# LXC Installation
+# Linux Containers Installation
+
+## Insall package
 
 ```bash
-sudo apt install -y lxd
-# sudo snap install lxd
+sudo snap install lxd
 ```
 
-## Usage
+```bash
+sudo usermod -aG lxd $USER
+sudo chmod 777 /var/snap/lxd/common/lxd/unix.socket
+```
+
+## Initial setup
 
 ```bash
 lxd init
+lxd init --minimal
+```
+
+```bash
+cat lxd-config.yaml | sudo lxd init --preseed
 ```
 
 Images
@@ -22,25 +33,45 @@ lxc image info ubuntu:lts
 ```
 
 ```bash
-lxc image list ubuntu:version
-lxc image list centos:version
+lxc image list ubuntu:22.04
+lxc image list ubuntu:24.04
+lxc image list images:centos
 ```
 
-Launch container
+## Launch container
 
 ```bash
-lxc launch images:centos/8 vm
+sudo lxc launch images:centos/8 centos-8
+```
+
+```bash
+sudo lxc launch ubuntu:22.04 ubuntu-22
 ```
 
 Container Info
 
 ```bash
-lxc info vm
+lxc list
 ```
+
+```bash
+lxc info ubuntu-22
+```
+
+```bash
+lxc stop
+```
+
+## Login to container
 
 Shell login
 
 ```bash
-lxc exec vm -- bash
-lxc shell vm
+lxc shell ubuntu-22
+```
+
+Run commands
+
+```bash
+lxc exec ubuntu-22 -- bash
 ```
