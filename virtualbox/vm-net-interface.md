@@ -16,6 +16,20 @@ Edit connection (VirtualBox example)
 sudo vi /etc/netplan/00-installer-config.yaml
 ```
 
+Default Configuration
+
+```yaml
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+    enp0s8:
+      dhcp4: true
+  version: 2
+```
+
+Static IP for Host only network
+
 ```yaml
 network:
   version: 2
