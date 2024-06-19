@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- [Install virtualbox](../virtualbox/installation.md)
+- [Install Virtualbox](../virtualbox/installation.md)
 
 ## Install
 
