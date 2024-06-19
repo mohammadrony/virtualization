@@ -4,6 +4,7 @@
 
 - [Linux Containers](./lxc/)
 - [VirtualBox](./virtualbox)
+- [Vagrant](./vagrant/)
 
 ## Production
 
