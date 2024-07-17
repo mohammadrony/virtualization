@@ -10,3 +10,7 @@
 
 - [Oracle VM Manager](./ovm)
 - [VMware](./vmware)
+
+## Common
+
+- [Hardware](./hardware/)
