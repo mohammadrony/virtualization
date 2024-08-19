@@ -10,5 +10,5 @@ sudo service openvswitch start
 Usage
 
 ```bash
-sudo ovs-vsctl show
+ovs-vsctl show
 ```

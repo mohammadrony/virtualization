@@ -17,7 +17,7 @@ xm uptime
 VM console
 
 ```bash
-sudo xm console <id>
+xm console <id>
 # Ctrl+] to exit
 ```
 
