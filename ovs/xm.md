@@ -1,20 +1,38 @@
 # XM
 
+## Commands
+
 ```bash
 xm
 ```
+
+VM status
 
 ```bash
 xm list
 ```
 
-VM uptime
-
 ```bash
 xm uptime
 ```
 
-VM console
+VM management
+
+```bash
+xm create <file>
+```
+
+```bash
+xm domname <id>
+```
+
+```bash
+xm destroy <id>
+```
+
+```bash
+xm reboot <id>
+```
 
 ```bash
 xm console <id>
