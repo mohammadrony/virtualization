@@ -9,7 +9,7 @@
 
 ## Production
 
-- [Oracle VM Manager](./ovm)
+- [Oracle VM Server](./ovs)
 - [VMware](./vmware)
 
 ## Common
