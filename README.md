@@ -2,8 +2,9 @@
 
 ## Development
 
+- [Desktop](./desktop/)
 - [Linux Containers](./lxc/)
-- [VirtualBox](./virtualbox)
+- [VirtualBox](./virtualbox/)
 - [Vagrant](./vagrant/)
 
 ## Production

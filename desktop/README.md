@@ -1,3 +1,3 @@
-# Desktop Configuration
+# Desktop
 
 - [Dual Boot](./dual-boot.md)
