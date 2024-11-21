@@ -12,6 +12,6 @@
 - [Oracle VM Server](./ovs)
 - [VMware](./vmware)
 
-## Common
+## Others
 
 - [Hardware](./hardware/)
