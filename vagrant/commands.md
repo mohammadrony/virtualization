@@ -1,6 +1,10 @@
 # Vagrant Commands
 
-Start VM
+## Start VM
+
+Create a `Vagrantfile`.
+
+Provision VM
 
 ```bash
 vagrant up
@@ -9,7 +13,7 @@ vagrant up
 Login to VM
 
 ```bash
-vagrant ssh # node-1 node-2
+vagrant ssh # node-1
 ```
 
 ## Cleanup

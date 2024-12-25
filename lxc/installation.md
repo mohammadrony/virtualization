@@ -41,11 +41,11 @@ lxc image list images:centos
 ## Launch container
 
 ```bash
-sudo lxc launch images:centos/8 centos-8
+sudo lxc launch images:centos/9-Stream centos-9
 ```
 
 ```bash
-sudo lxc launch ubuntu:22.04 ubuntu-22
+sudo lxc launch ubuntu:24.04 ubuntu-24
 ```
 
 Container Info
@@ -55,7 +55,7 @@ lxc list
 ```
 
 ```bash
-lxc info ubuntu-22
+lxc info ubuntu-24
 ```
 
 ```bash
@@ -67,11 +67,11 @@ lxc stop
 Shell login
 
 ```bash
-lxc shell ubuntu-22
+lxc shell ubuntu-24
 ```
 
 Run commands
 
 ```bash
-lxc exec ubuntu-22 -- bash
+lxc exec ubuntu-24 -- bash
 ```

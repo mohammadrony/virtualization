@@ -8,8 +8,7 @@ Vagrant.configure("2") do |config|
 
   # Define the nodes
   nodes = [
-    { :name => "centos-server-1", :ip => "192.168.56.101" },
-    { :name => "centos-server-2", :ip => "192.168.56.102" },
+    { :name => "centos-9", :ip => "192.168.56.2" },
   ]
 
   # Provision each node
@@ -17,7 +16,7 @@ Vagrant.configure("2") do |config|
     config.vm.define node[:name] do |config|
       config.vm.hostname = node[:name]
 
-      config.vm.network "public_network", bridge: ["wlp0s20f3", "enp3s0"]
+      config.vm.network "public_network", bridge: ["wlp0s20f3", "wlp2s0", "enp3s0"]
       config.vm.network "private_network", ip: node[:ip], subnet: subnet, netmask: netmask
 
       config.vm.disk :disk, size: "20GB", primary: true

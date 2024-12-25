@@ -2,16 +2,16 @@
 
 ## Development
 
-- [Desktop](./desktop/)
-- [Linux Containers](./lxc/)
-- [VirtualBox](./virtualbox/)
-- [Vagrant](./vagrant/)
+- [Desktop](./desktop/README.md)
+- [Linux Containers](./lxc/README.md)
+- [VirtualBox](./virtualbox/README.md)
+- [Vagrant](./vagrant/README.md)
 
 ## Production
 
-- [Oracle VM Server](./ovs)
-- [VMware](./vmware)
+- [Oracle VM Server](./ovs/README.md)
+- [VMware](./vmware/README.md)
 
 ## Others
 
-- [Hardware](./hardware/)
+- [Hardware](./hardware/README.md)

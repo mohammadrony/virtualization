@@ -6,14 +6,14 @@ Vagrant.configure("2") do |config|
   netmask = "255.255.255.0"
 
   nodes = [
-    { :name => "ubuntu-server-1", :ip => "192.168.56.2" },
+    { :name => "ubuntu-24", :ip => "192.168.56.2" },
   ]
 
   nodes.each do |node|
     config.vm.define node[:name] do |config|
       config.vm.hostname = node[:name]
       
-      config.vm.network "public_network", bridge: ["wlp0s20f3", "enp3s0"]
+      config.vm.network "public_network", bridge: ["wlp0s20f3", "wlp2s0", "enp3s0"]
       config.vm.network "private_network", ip: node[:ip], subnet: subnet, netmask: netmask
       
       config.vm.disk :disk, size: "20GB", primary: true
