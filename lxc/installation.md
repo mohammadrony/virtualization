@@ -16,9 +16,6 @@ sudo chmod 777 /var/snap/lxd/common/lxd/unix.socket
 ```bash
 lxd init
 lxd init --minimal
-```
-
-```bash
 cat lxd-config.yaml | sudo lxd init --preseed
 ```
 
